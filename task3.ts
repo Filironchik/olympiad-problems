@@ -9,7 +9,7 @@ rl.question('Введите позицию числа: ', (answer) => {
 
     for(let i:number = 0; i <= 100; i++){dataString = dataString + String(i*i)}
 
-    console.log(dataString[number])
+    console.log('В позиции ' + number + ' находится ' + dataString[number] + ' цифра')
 
     rl.close();
 });

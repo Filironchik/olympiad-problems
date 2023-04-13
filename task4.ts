@@ -2,10 +2,12 @@ import * as readline from 'readline';
 
 let rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-let numbers:number[] = [];
+
 
 
 rl.question("Введите последоватеьность чисел через пробел: ", (answer) => {
+    let numbers:number[] = [];
+
     answer = answer + " "
     
     let num: string = "";
@@ -28,7 +30,7 @@ rl.question("Введите последоватеьность чисел чер
 
     const sortNumbers: number[] = productNumbers.sort((n1,n2) => n2 - n1);
     
-    console.log(sortNumbers[0]);
+    console.log('максимальное произведение среди всех пар этих чисел равно ', sortNumbers[0]);
 
     rl.close();
 });
